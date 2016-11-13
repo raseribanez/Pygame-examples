@@ -1,4 +1,5 @@
-__author__ = 'Skyeyes'
+# Ben Woodfield
+# Example of drawing circles
 
 import sys, random, math, pygame
 from pygame.locals import *
