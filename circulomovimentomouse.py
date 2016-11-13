@@ -1,14 +1,5 @@
-#-------------------------------------------------------------------------------
-# Name:        circulomovimentomouse
-# Purpose:
-#
-# Author:      Johann
-#
-# Created:     13/02/2011
-# Copyright:   (c) Johann 2011
-# Licence:     <your licence>
-#-------------------------------------------------------------------------------
-#!/usr/bin/env python
+# Another example of demonstrating circles
+# This one was commented in Spanish so I have edited
 
 import pygame
 from pygame.locals import*
@@ -26,8 +17,7 @@ y = 0
 
 while True:
     for event in pygame.event.get():
-        # se ele capturar um evento de fechar a tela (clicar no botao "X" no topo da janela), o programa eh fechado
-        if event.type == QUIT:
+       if event.type == QUIT:
             exit()
         if event.type == MOUSEMOTION:
             x, y = pygame.mouse.get_pos()
@@ -35,7 +25,6 @@ while True:
 
     posicao = (x, y)
 
-    # colore o fundo de preto, deve sempre vir antes de desenharmos os objetos, no caso o circulo, pois se nao, tudo vai ficar preto!
     screen.fill(preto)
     pygame.draw.circle(screen, amarelo, posicao, raio)
 
