@@ -1,3 +1,6 @@
+# Ben Woodfield
+# Draw a circle in Pygame
+
 import pygame
 from pygame.locals import *
 import sys
